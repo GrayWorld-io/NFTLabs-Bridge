@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <!-- jquery UI CDN -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <button class="dialog-test-btn">click!</button>
+    <!-- jquery CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- jquery UI CDN -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- dialog 라이브러리 -->
+    <script
+      type="text/javascript"
+      src="https://nowonbun.github.io/Loader/dialog.js"
+    ></script>
+    <script>
+      $(function () {
+        // 옵션을 설정한다.
+        dialog.set({
+          // 다이얼로그가 show될 때의 액션 설정
+          show: {
+            effect: "blind",
+            duration: 100,
+          },
+          // 다이얼로그가 hide될 때의 액션 설정
+          hide: {
+            effect: "explode",
+            duration: 100,
+          },
+          // 타이틀 설정
+          title: "hello world",
+          // 모달 여부
+          modal: true,
+          // 버튼 설정
+          buttons: {
+            OK: function () {
+              dialog.close();
+            },
+            Cancel: function () {
+              dialog.close();
+            },
+            Custom: function () {
+              dialog.close();
+            },
+          },
+        });
+        $(".dialog-test-btn").on("click", function () {
+          // 다이얼로그를 연다.
+          dialog.open("<p>hello world</p>");
+        });
+      });
+    </script>
+  </body>
+</html>

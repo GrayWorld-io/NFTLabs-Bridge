@@ -1,0 +1,12 @@
+{
+  "name": "Gray Seminar Souvenir #2",
+  "description": "2022년 Gray의 LG전자 코인의 모든 것 세미나 참에 참석해주신 것을 기념하여 NFT를 발행하여 나눠드립니다. \n 이는 최대 150개(골드50, 실버100)까지만 발행됩니다.",
+  "image": "ipfs://bafybeiguntrwjx7274iuit624kp47cuuejiaq5mfgqadxqfzyjuv3afv54",
+  "edition": 2,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Silver"
+    }
+  ]
+}
